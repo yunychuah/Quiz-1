@@ -59,7 +59,7 @@ print(vendorlist)
 
 
 # iternate through the dictionary and write to the output file
-outfile.write(vendorlist)
+outfile.write(str(vendorlist))
 
 
 
