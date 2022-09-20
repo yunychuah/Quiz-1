@@ -42,10 +42,18 @@ for record in csvfile:
     outfile.write(record[1] + record[2] + 'email:' + record[4] + 'phone' + record[5])
     counter += 1
 
+
+#values are corresponding email address and number
     # add the key-value pair to the dictionary
-    vendorlist[name]
-
-
+    vendorlist['name'] = (record[1] + record[2])
+    vendorlist['email'] = (record[4])
+    vendorlist['phone'] = (record[5])
+    vendorlist = {
+        'name': {
+            'email:':record[4],
+            'phone:':record[5]
+        }
+    }
 # print the dictionary after the loop is finished
 print(vendorlist)
 
